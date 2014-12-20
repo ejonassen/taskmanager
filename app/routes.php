@@ -27,7 +27,7 @@ Route::post('login', array('uses' => 'LogController@postLogin'))->before('csrf')
 Route::get('/logout', array('as' => 'logout', 'uses' => 'LogController@getLogout'));
 
 //signup route
-Route::get('/signup', array('uses' => 'LogController@getSignUp'))->before('guest');
+Route::get('/signup', array('as'=>'signup','uses' => 'LogController@getSignUp'))->before('guest');
 Route::post('signup', array('uses' => 'LogController@postSignUp'))->before('csrf');
 
 

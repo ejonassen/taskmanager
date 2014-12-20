@@ -38,16 +38,16 @@ class LogController extends Controller{
         $user = new User;
         
         $user->email    = Input::get('email');
-        $user->name    = Input::get('username');
+        $user->name     = Input::get('username');
         $user->password = Hash::make(Input::get('password'));
         
-        $logrules = array('email' => 'required|email|unique:users',
-                          'password' => 'required|min:3',
-                          'username' => 'required|unique:users');
-        $validator = Validator::make(Input::all(), $logrules);
+        $signuprules = array('email' => 'required|email|unique:users',
+                          'username' => 'required|unique:users',
+                          'password' => 'required|min:3');
+        $validator = Validator::make(Input::all(), $signup);
         
         if ($validator->fails()){
-            return Redirect::to('/signup')->withErrors($validator);
+            return Redirect::to('signup')->withErrors($validator);
         }
         
         $user->save();
