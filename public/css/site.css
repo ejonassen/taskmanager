@@ -1,0 +1,149 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: trebuchet, sans-serif;
+    background-color: lightgray;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    background-color: darkred;
+}
+.header a{
+    position:relative;
+    top: 5px;
+    left: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.header a:hover{;
+    text-decoration: none;
+    font-weight: bold;
+    color: lightgray;
+}
+.header span{
+    position:relative;
+    top: 4px;
+    left: 5px;
+    font-weight: bold;
+    color: white;
+}
+#current{
+    position:relative;
+    top:0;
+    left:0;
+    color: lightgray;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: navy;
+}
+h2 a{
+    text-decoration: none;
+    color: navy;
+}
+h2 a:hover{
+    text-decoration: none;
+    color: blue;
+}
+.container{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 50px auto;
+    width: 600px;
+    box-shadow: 0 0 5px gray;
+    padding: 10px;
+}
+form{
+    position: relative;
+    margin: auto;
+}
+form input{
+    border-radius: 5px;
+    margin: auto;
+}
+form input{
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#arch a{
+    text-decoration:none;
+    color: lightgray;
+}
+#arch a:hover{
+    text-decoration:none;
+    color: gray;
+}
+.tasklist{
+    margin: auto;
+}
+.taskbubble{
+    position: relative;
+    border: 1px solid darkgray;
+    background-color: white;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+.tasktext{
+    font-weight:bold;
+}
+.ctasktext{
+    font-weight:bold;
+    color:gray;
+}
+.compcheck{
+    text-align: right;
+    font-size: 14px;
+    color: gray;
+}
+.compcheck input{
+    position:relative;
+    top: 2px;
+}
+.edlinks{
+    position:relative;
+    top: 15px;
+}
+.udate{
+    position: relative;
+    top: 10px;
+    font-size: 10px;
+    color: gray;
+}
+.cdate{
+    
+    text-align: right;
+    font-size: 10px;
+    color: gray;
+}
+.cnew{
+    font-size: 20px;
+    text-align: center;
+}
+.signuplink{
+    font-size: 12px;
+}
+.signuplink a{
+    color: darkgray;
+}
+.sbutton{
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.sbutton:hover{
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: darkgray;
+}
