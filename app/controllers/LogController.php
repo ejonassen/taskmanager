@@ -41,7 +41,11 @@ class LogController extends Controller{
         $user->name    = Input::get('username');
         $user->password = Hash::make(Input::get('password'));
         
-        $logrules = array('username' => 'required', 'password' => 'required');
+        $logrules = array('email' => 'required',
+                          'password' => 'required',
+                          'username' => 'required',
+                          'email' => 'unique:users',
+                          'username' => 'unique:users');
         $validator = Validator::make(Input::all(), $logrules);
         
         if ($validator->fails()){

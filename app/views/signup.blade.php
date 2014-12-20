@@ -4,8 +4,8 @@
     
     <h1>Sign up</h1>
     @foreach($errors->all() as $error)
-		<p class="error">{{ $error }}</p>
-	@endforeach
+	<p class="error">{{ $error }}</p>
+    @endforeach
     <div class="cnew">
     {{ Form::open(array('url' => '/signup')) }}
     
