@@ -47,7 +47,7 @@ class LogController extends Controller{
         $validator = Validator::make(Input::all(), $logrules);
         
         if ($validator->fails()){
-            return Redirect::to('signup')->withErrors($validator);
+            return Redirect::to('/signup')->withErrors($validator);
         }
         
         $user->save();
