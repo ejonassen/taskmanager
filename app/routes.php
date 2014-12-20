@@ -1,6 +1,6 @@
 <?php
 
-
+//main views
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'))->before('auth');
 Route::post('/', array('uses' => 'HomeController@postIndex'))->before('csrf');
 Route::get('/complete', array('as' => 'complete', 'uses' => 'HomeController@getcIndex'))->before('auth');
