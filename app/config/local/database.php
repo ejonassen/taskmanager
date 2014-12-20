@@ -25,7 +25,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'tasks',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'oK8YDNwPkL',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
